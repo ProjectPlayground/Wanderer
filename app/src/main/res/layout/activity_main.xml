@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Banner"
+        android:text="@string/banner" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity" />
+
+        <Button
+            android:id="@+id/booknow"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:onClick="onClickBook"
+            android:text="@string/BookNow" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        style="@style/InfoScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Intro"
+                android:text="@string/intro" />
+
+            <LinearLayout
+                style="@style/ButtonContainer"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/HostelAdditionalInfoButton"
+                    android:onClick="onClickAmenities"
+                    android:text="@string/amenities" />
+
+                <TextView
+                    android:id="@+id/amenities"
+                    style="@style/HostelAdditionalInfoText"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ButtonContainer"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/HostelAdditionalInfoButton"
+                    android:onClick="onClickRoom"
+                    android:text="@string/room" />
+
+                <TextView
+                    android:id="@+id/room"
+                    style="@style/HostelAdditionalInfoText"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ButtonContainer"
+                android:orientation="vertical">
+
+                <Button
+                    style="@style/HostelAdditionalInfoButton"
+                    android:onClick="onClickLocation"
+                    android:text="@string/location" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/location"
+                        style="@style/HostelAdditionalInfoText"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/map"
+                        style="@style/Map"
+                        android:layout_below="@+id/location"
+                        android:clickable="true"
+                        android:onClick="onClickMap"
+                        android:src="@drawable/map"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9E9E9E" />
+
+            <TextView
+                style="@style/ContactTableRow"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="@string/contact"
+                android:textAllCaps="true" />
+
+            <TableRow style="@style/ContactTableRow">
+
+                <ImageView
+                    style="@style/ContactImage"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/logo_map" />
+
+                <TextView
+                    style="@style/ContactText"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:onClick="onClickMap"
+                    android:text="@string/address" />
+            </TableRow>
+
+            <TableRow style="@style/ContactTableRow">
+
+                <ImageView
+                    style="@style/ContactImage"
+                    android:src="@drawable/logo_phone" />
+
+                <TextView
+                    android:id="@+id/PhoneNumber"
+                    style="@style/ContactText"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClickPhone"
+                    android:text="@string/phone" />
+            </TableRow>
+
+            <TableRow style="@style/ContactTableRow">
+
+                <ImageView
+                    style="@style/ContactImage"
+                    android:src="@drawable/logo_mail" />
+
+                <TextView
+                    style="@style/ContactText"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClickMail"
+                    android:text="@string/email" />
+            </TableRow>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

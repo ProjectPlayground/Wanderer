@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BookNowActivity"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/BookNowActivity"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Banner"
+                android:text="@string/banner" />
+
+            <TextView
+                style="@style/Intro"
+                android:text="@string/BookNowActivity"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="@string/NameField"
+                android:inputType="textCapWords"
+                android:singleLine="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/checkin"
+                    style="@style/FormField"
+                    android:text="@string/CheckIn" />
+
+                <EditText
+                    style="@style/EditTextView"
+                    android:layout_toRightOf="@id/checkin"
+                    android:id="@+id/CheckInField"
+                    android:hint="@string/DateFormat"
+                    android:digits="1234567890/"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/LengthOfStay"
+                    style="@style/FormField"
+                    android:text="@string/NumberOfNights" />
+
+                <LinearLayout
+                    android:id="@+id/DaysQuantityPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/LengthOfStay"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp">
+
+                    <Button
+                        style="@style/PlusMinus"
+                        android:onClick="decrementDay"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/numberOfDays_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:color="@android:color/black"
+                        android:padding="16dp"
+                        android:text="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        style="@style/PlusMinus"
+                        android:onClick="incrementDay"
+                        android:text="+" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TypeOfRoom"
+                    style="@style/FormField"
+                    android:text="@string/TypeOfRoom" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="24dp"
+                    android:layout_toRightOf="@id/TypeOfRoom"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/NumberOfGuests"
+                    style="@style/FormField"
+                    android:text="@string/NumberOfGuests" />
+
+                <LinearLayout
+                    android:id="@+id/QuantityPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/NumberOfGuests"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp">
+
+                    <Button
+                        style="@style/PlusMinus"
+                        android:onClick="decrement"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/quantity_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:color="@android:color/black"
+                        android:padding="16dp"
+                        android:text="1"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        style="@style/PlusMinus"
+                        android:onClick="increment"
+                        android:text="+" />
+
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Sum"
+                    android:layout_below="@+id/QuantityPicker" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/CalculatePrice"
+                    style="@style/FormField"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/CalculatePrice" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="8dp"
+                    android:layout_toRightOf="@id/CalculatePrice"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/ShowPrice"
+                    android:clickable="true"
+                    android:onClick="onClickPrice"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BookButton"
+                    style="@style/BookButton"
+                    android:text="@string/SendBookingRequest"
+                    android:onClick="onClickBookNowMail"/>
+
+                <Button
+                    android:id="@+id/Home"
+                    style="@style/HomeButton"
+                    android:text="@string/HomeButton" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

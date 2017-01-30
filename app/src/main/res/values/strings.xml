@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Wanderer</string>
+    <string name="banner">Wanderer Hostel</string>
+    <string name="intro">
+        Rest your body, restore your energy and take the next step of your journey!
+        \n
+        \nOn top of quality rooms and services designed for backpackers, the Wanderer provides a warm and friendly environment with spacious common areas to encourage guests to mingle, relax and exchange their traveling experiences with like-minded people.
+        \n
+        \nWhether you\'re here for a short or long stay, we hope you\'ll fall in love with this place and make it your home in Taipei.
+        \n
+        \nRefresh your spirits for the journey ahead!
+            </string>
+
+    <string name="BookNow">Book Now!</string>
+
+    <string name="amenities">Amenities</string>
+    <string name="amenitiesText">
+        - Multilingual staff
+        \n- 24-Hour Reception
+        \n- Free Maps
+        \n- Free Wi-Fi
+        \n- Free Shared Kitchen
+        \n- Key Card Access
+        \n- Personal Locker
+    </string>
+    <string name="room">Room</string>
+    <string name="roomText">
+        - 4-bed Mixed/Female Dorm (600 NTD per night and per bed)
+        \n- 6-bed Mixed/Female Dorm (550 NTD per night and per bed)
+    </string>
+    <string name="location">Location</string>
+    <string name="locationText">
+        No. 1, Section 2, Xinsheng South Road, Da’an District, Taipei City, Taïwan 106</string>
+    <string name="contact">Contact us</string>
+    <string name="address">No. 1, Section 2, Xinsheng South Road, Da’an District, Taipei City, Taïwan 106</string>
+    <string name="phone">+(00) 123456789</string>
+    <string name="email">contact@wandererhostel.com</string>
+    <string name="Toast">If you have any question, feel free to contact us! Looking forward to seeing you!</string>
+
+
+    <!--String name for Book Now Page -->
+    <string name="NameField">Name</string>
+    <string name="BookNowActivity">Reservation : </string>
+    <string name="CheckIn">Check-In date : </string>
+    <string name="DateFormat">MM/DD/YYYY</string>
+    <string name="NumberOfNights">Number of Nights : </string>
+    <string name="TypeOfRoom">Type of Room : </string>
+    <string name="DropDown1">4-Bed Female Dorm</string>
+    <string name="DropDown2">4-Bed Mixed Dorm</string>
+    <string name="DropDown3">6-Bed Female Dorm</string>
+    <string name="DropDown4">6-Bed Mixed Dorm</string>
+    <string name="NumberOfGuests">Number of Guests : </string>
+    <string name="SendBookingRequest">Send Booking Request</string>
+    <string name="HomeButton">Home</string>
+    <string name="CalculatePrice">Total Price (NTD) : </string>
+    <string name="ShowPrice">Click to update</string>
+    <string name="BookToast">Please fill the requested fields before sending a booking request</string>
+    <string name="incrementToast">If you want to make a reservation for more than 6 person, please make two separate bookings with the same booking name</string>
+    <string name="decrementToast">You cannot book a bed for less than 1 guest</string>
+    <string name="decrementDayToast">You cannot book a bed for less than 1 night</string>
+    <string name="incrementDayToast">You cannot book a bed for more than 20 nights</string>
+
+    <!--String for booking summary-->
+    <string name="booking_name">Hi!
+    \n
+    \nMy name is </string>
+    <string name="booking_nbOfGuests"> and I would like to book  </string>
+    <string name="booking_typeOfRoomPL">beds in the</string>
+    <string name="booking_typeOfRoomSG">bed in the</string>
+    <string name="booking_checkinDatePL">.
+        \nWe\'ll be arriving on the </string>
+    <string name="booking_checkinDateSG">.
+        \nI\'ll be arriving on the </string>
+    <string name="booking_nbOfNights"> and staying </string>
+    <string name="booking_priceSG">night, for a total of
+    </string>
+    <string name="booking_pricePL">nights, for a total of
+    </string>
+    <string name="booking_end">NTD.
+        \n
+        \n Looking forward to seeing you!
+        \n
+    </string>
+
+
+
+</resources>
