@@ -35,7 +35,7 @@ Note : I am still working on it but any tips, suggestion or pull requests are we
 - How to swipe only one part of your layout http://stackoverflow.com/questions/24622942/how-to-swipe-only-a-portion-of-the-layout?noredirect=1&lq=1
 - How to automatically swipe the pictures in ViewPager (set a timer) http://stackoverflow.com/questions/17610085/how-to-switch-automatically-between-viewpager-pages1
 - How to set the visibility of your views (I used it to show/hide details of the hostel in the first screen) : http://stackoverflow.com/questions/3465841/how-to-change-visibility-of-layout-programaticly1
-- How to make a multiple-screen app (there's a lesson on udacity about multiscreen apps, otherwise, you can also have a look at) : http://stackoverflow.com/questions/10936042/how-to-open-layout-on-buttton-click-android1
+- How to make a multiple-screen app : http://stackoverflow.com/questions/10936042/how-to-open-layout-on-buttton-click-android1
 - How to create a drop down list (spinner) : http://stackoverflow.com/questions/13377361/how-to-create-a-drop-down-list1
 and http://www.mkyong.com/android/android-spinner-drop-down-list-example/1
 - How to limit the type of characters accepted in EditText views : http://stackoverflow.com/questions/23212439/how-to-restrict-the-edittext-to-accept-only-alphanumeric-characters1
