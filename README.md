@@ -2,7 +2,10 @@
 This project started as a Single Screen App project completed for the "Udacity : User Interface [EU Scholarship]".
 
 It started as a fake hostel business card and as I started creating the business card, I felt the need to add a "Book now" functionality to make it more useful somehow.
-Thus, it is now a 2-Screen app with the following features :
+
+Thus, it is now a 2-Screen app and all of the features are described down below.
+
+Note : I am still working on it but any tips, suggestion or pull requests are welcome! 
 
 #Screen 1
 ![screenshot1](https://cloud.githubusercontent.com/assets/24596876/22485139/bab7ba3a-e804-11e6-9f08-9a7148200827.png)
@@ -27,7 +30,17 @@ Thus, it is now a 2-Screen app with the following features :
 - The "Send booking request" Button that open the mail app of the user (email intent) and prefill the object and message of the email according to the data given by the users.
 - The "Home" button that leads back to the first screen
 
+#Resources
+- Image slide (ViewPager) https://discussions.udacity.com/t/4quotes-a-simple-slider-app/2131171
+- How to swipe only one part of your layout http://stackoverflow.com/questions/24622942/how-to-swipe-only-a-portion-of-the-layout?noredirect=1&lq=1
+- How to automatically swipe the pictures in ViewPager (set a timer) http://stackoverflow.com/questions/17610085/how-to-switch-automatically-between-viewpager-pages1
+- How to set the visibility of your views (I used it to show/hide details of the hostel in the first screen) : http://stackoverflow.com/questions/3465841/how-to-change-visibility-of-layout-programaticly1
+- How to make a multiple-screen app (there's a lesson on udacity about multiscreen apps, otherwise, you can also have a look at) : http://stackoverflow.com/questions/10936042/how-to-open-layout-on-buttton-click-android1
+- How to create a drop down list (spinner) : http://stackoverflow.com/questions/13377361/how-to-create-a-drop-down-list1
+and http://www.mkyong.com/android/android-spinner-drop-down-list-example/1
+- How to limit the type of characters accepted in EditText views : http://stackoverflow.com/questions/23212439/how-to-restrict-the-edittext-to-accept-only-alphanumeric-characters1
 
-I am still working on it but any tips, suggestion or pull requests are welcome! 
+
+
 
 
