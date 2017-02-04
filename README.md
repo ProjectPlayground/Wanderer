@@ -1,7 +1,7 @@
 # Wanderer
-This project started as a Single Screen App project completed for the "Udacity : User Interface [EU Scholarship]".
+This project is my first app attempt for the "Udacity : User Interface [EU Scholarship]" Single Screen App project.
 
-It started as a fake hostel business card and as I started creating the business card, I felt the need to add a "Book now" functionality to make it more useful somehow.
+This project started as a fake hostel business card and as I started creating the business card, I felt the need to add a "Book now" functionality to make it more useful somehow.
 
 Thus, it is now a 2-Screen app and all of the features are described down below.
 
